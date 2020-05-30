@@ -97,7 +97,7 @@ uint32_t layer_state_set_user(uint32_t state){
 }
 
 void matrix_scan_user(void){
-    if(!is_sleeping&&timer_elapsed(idle_timer)>600000){
+    if(!is_sleeping&&timer_elapsed(idle_timer)>60000){
         rgblight_disable_noeeprom();
         is_sleeping=true;
     }
